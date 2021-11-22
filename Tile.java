@@ -1,5 +1,3 @@
-package com.javarush.task.task35.task3513;
-
 import java.awt.*;
 
 public class Tile {
