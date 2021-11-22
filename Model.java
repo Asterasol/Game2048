@@ -1,5 +1,3 @@
-package com.javarush.task.task35.task3513;
-
 import java.util.*;
 
 public class Model {
@@ -94,79 +92,9 @@ public class Model {
 
     public Model() {
         resetGameTiles();
-//        System.out.println(canMove());
-//        turn();
-//
-//        System.out.println(gameTiles.length);
-//
-//
-//
-//        Tile [] tiles1 = new Tile[] {new Tile(4), new Tile(4), new Tile(4), new Tile(4)};
-//
-//        Tile [] tiles2 = new Tile[] {new Tile(4), new Tile(4), new Tile(4), new Tile(0)};
-//
-//        Tile [] tiles3 = new Tile[] {new Tile(0), new Tile(2), new Tile(0), new Tile(4)};
-//
-//        Tile [] tiles4 = new Tile[] {new Tile(2), new Tile(0), new Tile(0), new Tile(2)};
-//
-//        compressTiles(tiles1);
-//        compressTiles(tiles2);
-//        compressTiles(tiles3);
-//        compressTiles(tiles4);
-//
-//        for (Tile tile : tiles1){
-//            System.out.print(tile.value + "\t");
-//        }
-//        System.out.println();
-//
-//        for (Tile tile : tiles2){
-//            System.out.print(tile.value + "\t");
-//        }
-//        System.out.println();
-//
-//        for (Tile tile : tiles3){
-//            System.out.print(tile.value + "\t");
-//        }
-//        System.out.println();
-//
-//        for (Tile tile : tiles4){
-//            System.out.print(tile.value + "\t");
-//        }
-//        System.out.println();
-//        System.out.println();
-//        System.out.println();
-//
-//        mergeTiles(tiles1);
-//        mergeTiles(tiles2);
-//        mergeTiles(tiles3);
-//        mergeTiles(tiles4);
-//
-//        for (Tile tile : tiles1){
-//            System.out.print(tile.value + "\t");
-//        }
-//        System.out.println();
-//
-//        for (Tile tile : tiles2){
-//            System.out.print(tile.value + "\t");
-//        }
-//        System.out.println();
-//
-//        for (Tile tile : tiles3){
-//            System.out.print(tile.value + "\t");
-//        }
-//        System.out.println();
-//
-//        for (Tile tile : tiles4){
-//            System.out.print(tile.value + "\t");
-//        }
-
     }
 
     void resetGameTiles() {
-//        gameTiles = new Tile[][] {{new Tile(2), new Tile(64),new Tile(4), new Tile(256)},
-//                                {new Tile(4), new Tile(8),new Tile(16), new Tile(32)},
-//                                {new Tile(8), new Tile(16),new Tile(32), new Tile(64)},
-//                                {new Tile(0), new Tile(32),new Tile(64), new Tile(128)}};
         gameTiles = new Tile[FIELD_WIDTH][FIELD_WIDTH];
         for (int i = 0; i < FIELD_WIDTH; i++) {
             for (int j = 0; j < FIELD_WIDTH; j++) {
@@ -213,23 +141,6 @@ public class Model {
             }
         }
         return isCompressing;
-//        Tile [] arrayTiles = new Tile[FIELD_WIDTH];
-//        int indexNewArray = 0;
-//        for (int i = 0; i < tiles.length; i++) {
-//            if (tiles[i].value != 0) {
-//                arrayTiles[indexNewArray] = tiles[i];
-//                indexNewArray++;
-//            }
-//        }
-//        if (indexNewArray < arrayTiles.length) {
-//            for (int i = indexNewArray; i < arrayTiles.length; i++) {
-//                arrayTiles[i] = new Tile(0);
-//            }
-//        }
-//
-//        for (int i = 0; i < tiles.length; i++) {
-//            tiles[i] = arrayTiles[i];
-//        }
     }
 
     private boolean mergeTiles (Tile [] tiles) {
